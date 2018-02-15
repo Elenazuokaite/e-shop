@@ -1,0 +1,39 @@
+<form (ngSubmit)="onSave(f)" #f="ngForm">
+  <div class="form-group">
+    <label>Kategorija</label>
+    <br>
+    <input type="text" name="category" [(ngModel)]="product.category">
+  </div>
+  <div class="form-group">
+    <label>Pavadinimas</label>
+    <br>
+    <input type="text" name="title" [(ngModel)]="product.title">
+  </div>
+  <div class="form-group">
+    <label>Dydis</label>
+    <br>
+    <input type="text" name="size" [(ngModel)]="product.size">
+  </div>
+    <div class="form-group">
+      <label>Kaina</label>
+      <br>
+      <input type="text" name="price" [(ngModel)]="product.price">
+    </div>
+      <!-- <div class="form-group">
+        <label>Nuotrauka</label>
+        <br>
+        <input type="text" name="image" [(ngModel)]="product.image">
+      </div> -->
+      <div class="form-group">
+        <label>
+          <input type="file" (change)="detectFiles($event)">
+        </label>
+        <!-- <button (click)="uploadSingle()">ikelti</button> -->
+      </div>
+  <div class="form-group">
+    <button type="submit" name="button">Save</button>
+  </div>
+</form>
+
+
+<!-- title: string; size: string; price: any; image: any; -->

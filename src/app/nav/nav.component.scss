@@ -1,0 +1,15 @@
+nav {
+    min-height: 40px;
+    line-height: 40px;
+    text-align: center;
+    a {
+        text-decoration: none;
+        margin: 0 10px;
+        color: #5d6568;
+        padding: 0 5px;
+        display: inline-block;
+    }
+    a:hover {
+        background-color: #e6e6e6;
+    }
+}

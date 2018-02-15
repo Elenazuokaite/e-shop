@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #faebd7;
+    background: -webkit-linear-gradient(to right, #faebd7, #fdc2be); 
+    background: linear-gradient(to right, #faebd7, #fcd0cd);
+    h1 {
+        color: #2b2b2b;
+    }
+}
+}
