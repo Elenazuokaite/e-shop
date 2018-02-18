@@ -2,51 +2,6 @@
   <header>
     <h1>Visos prekės</h1>
   </header>
-  <div class="filter">
-    <div>
-      <p>Prekių paieška</p>
-      <input placeholder="Ieškoti">
-    </div>
-    <div>
-      <p>Kaina</p>
-      <select>
-        <option value="lowToHigh">Pigiausi viršuje</option>
-        <option value="highToLow">Brangiausi viršuje</option>
-      </select>
-    </div>
-    <div>
-      <p>Kategorija</p>
-      <select [(ngModel)] = "category" (change)="filterExact('category', category)">
-        <option value="Suknelės">Suknelės</option>
-        <option value="Palaidinės">Palaidinės</option>
-        <option value="Sijonai">Sijonai</option>
-        <option value="Kelnės">Kelnės</option>
-        <option value="Švarkai">Švarkai</option>
-      </select>
-    </div>
-    <div *ngFor="let product of filteredProducts">
-        <p class="title">{{product.title}}</p>
-        <div class="zoom">
-          <img src="{{product.url}}">
-        
-        <p>Kategorija: {{product.category}}</p>
-        <p>Kaina: {{product.price}}</p>
-      </div>
-      <button (click)="addToBag(product.key)">Į krepšelį</button>
-      <!-- ../../assets/img/dress1.jpg -->
-    </div>
-    <div>
-      <p>Dydis</p>
-      <select>
-        <option value="s">S</option>
-        <option value="m">M</option>
-        <option value="l">L</option>
-        <option value="xl">XL</option>
-      </select>
-    </div>
-  </div>
-  
-  <input type="text" (keydown)="search($event)">
   <ul>
     <li *ngFor="let product of products | async">
       <div>
@@ -59,7 +14,6 @@
         <p>Kaina: {{product.price}}</p>
       </div>
       <button (click)="addToBag(product.key)">Į krepšelį</button>
-      <!-- ../../assets/img/dress1.jpg -->
     </li>
   </ul>
 </section>

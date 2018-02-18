@@ -5,9 +5,6 @@ export class Product {
     file: File;
     category: string;
     url: string;
-    progress: number;
-    name: string;
-
     constructor(file: File) {
         this.file = file;
     }

@@ -2,11 +2,8 @@
   <header>
     <h1>Prekių krepšelis</h1>
   </header>
-  <p>
-    Prekių krepšelis tuščias
-  </p>
   <ul>
-    <!-- <li *ngFor="let product of productBag">
+    <li *ngFor="let product of productBag">
       <div>
         <p class="title">{{product.title}}</p>
         <div class="zoom">
@@ -15,17 +12,6 @@
         <p>Kategorija: {{product.category}}</p>
         <p>Dydis: {{(product.size)}}</p>
         <p>Kaina: {{product.price}}</p>
-      </div>
-    </li> -->
-    <li>
-      <div>
-        <p class="title">{{productBag.title}}</p>
-        <div class="zoom">
-          <img src="{{productBag.url}}">
-        </div>
-        <p>Kategorija: {{productBag.category}}</p>
-        <p>Dydis: {{(productBag.size)}}</p>
-        <p>Kaina: {{productBag.price}}</p>
       </div>
     </li>
   </ul>
