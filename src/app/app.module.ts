@@ -34,7 +34,7 @@ import { ProductService } from './product-list/shared/product.service';
     AngularFireDatabaseModule,
     AngularFireStorageModule
   ],
-  providers: [ProductService, AngularFirestore ],
+  providers: [ProductService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

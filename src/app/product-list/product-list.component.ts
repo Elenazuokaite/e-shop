@@ -36,7 +36,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
     this.products = this.pS.getAll();
     // this.filteredProducts = this.products.getFiltered();
-    this.applyFilters();
+    // this.applyFilters();
     console.log(this.products);
     console.log(this.filteredProducts);
     // this.pS.getProducts(this.startAt, this.endAt).subscribe(
